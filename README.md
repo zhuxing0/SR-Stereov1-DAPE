@@ -1,3 +1,4 @@
 # SR-Stereov1-DAPE
-A simple but effective change. 
-More details on the stepwise regression architecture and DAPE will be updated later.
+
+# 2024.6.30
+    Update rough code for SR Stereo and DAPE
