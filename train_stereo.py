@@ -154,10 +154,6 @@ class Mylogging():
         n.writelines(self.get_log())
         n.close()
 
-def Disp_gt_weight(disp_gt, disp_pred, disp_gt_weight_type, disp_gt_weight_h1):
-    disp_gt_weight = torch.clamp(torch.pow((disp_gt - disp_pred).abs(), -disp_gt_weight_h1), 0, 1.5).detach()
-    return disp_gt_weight.cuda()
-
 def sequence_loss(disp_preds, disp_init_pred, disp_gt, valid, delta_disps, edge_map, args, loss_gamma=0.9, max_disp=192):
     """ Loss function defined over sequence of flow predictions """
     # disp_pred:[torch.Size([4, 1, 320, 736])]*22
