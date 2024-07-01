@@ -240,26 +240,6 @@ def sequence_loss(disp_preds, disp_init_pred, disp_gt, valid, delta_disps, edge_
     init_disp_loss = 1.0 * F.smooth_l1_loss((init_weight * disp_init_pred)[valid.bool()], (init_weight * disp_gt)[valid.bool()], size_average=True)
     disp_loss += init_disp_loss
 
-    # SR-Stereo_v1
-    stepwise_loss = torch.tensor(0.0).to(disp_gt.device)
-    if args.stepwise and 'kitti' not in args.train_datasets and not args.edge_supervised:
-        n_step = len(delta_disps)
-        b, _, h, w = delta_disps[0][0].shape
-        torch_resize = Resize([h, w])
-        disp_gt_down_sample = torch_resize(disp_gt) / (disp_gt.shape[3] / w) # torch.Size([4, 1, 80, 184])
-        valid_down_sample = torch_resize(valid) # torch.Size([4, 1, 80, 184])
-        valid_down_sample = (valid_down_sample >= 0.5)
-
-        for i, (delta_disp, disp) in enumerate(delta_disps):
-
-            i_loss_weight = 1.0
-            adjusted_loss_gamma = loss_gamma**(15/(n_step - 1))
-            i_weight = adjusted_loss_gamma**(n_step - i - 1)
-            disp_gt_down_sample_now = torch.clamp(disp_gt_down_sample - disp, -args.xga_uncertain_aft_m*1.5, args.xga_uncertain_aft_m*1.5)
-            stepwise_loss += i_weight * F.smooth_l1_loss((i_loss_weight * delta_disp)[valid_down_sample.bool()], (i_loss_weight * disp_gt_down_sample_now)[valid_down_sample.bool()], size_average=True)
-
-        disp_loss += stepwise_loss
-
     for i in range(n_predictions):
         adjusted_loss_gamma = loss_gamma**(15/(n_predictions - 1))
         i_weight = adjusted_loss_gamma**(n_predictions - i - 1)
