@@ -6,6 +6,8 @@
   <div align="center"></div>
 </p>
 
+> [Weiqing Xiao](https://github.com/zhuxing0), Wei Zhao <br> Behang University
+
 The overall architecture of the proposed SR-Stereo:
 <p align="center">
   <a href="">
