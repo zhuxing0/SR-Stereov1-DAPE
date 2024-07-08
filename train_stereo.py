@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from core.srstereov1 import SRStereov1
-from core.srstereov1_uncertaintynet import *
+from core.srstereov1_EENet import *
 from evaluate_stereo import *
 import core.srstereov1_stereo_datasets as datasets
 import torch.nn.functional as F
