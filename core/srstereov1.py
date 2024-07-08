@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from core.update import *
-from core.extractor import MultiBasicEncoder, MultiBasicEncoder_xga, Feature
+from core.extractor import MultiBasicEncoder, Feature
 from core.srstereov1_EENet import *
 from core.geometry import *
 from core.submodule import *
