@@ -9,6 +9,7 @@
 > [Weiqing Xiao](https://github.com/zhuxing0), Wei Zhao* <br> Behang University
 
 The stepwise regression architecture:
+-----
 <p align="center">
   <a href="">
     <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/idea.png" alt="Logo" width="70%">
@@ -16,13 +17,15 @@ The stepwise regression architecture:
 </p>
 
 The proposed SR-Stereo:
+-----
 <p align="center">
   <a href="">
     <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/SR-Stereo.png" alt="Logo" width="80%">
   </a>
 </p>
 
- The overall framework of the proposed DAPE:
+The overall framework of the proposed DAPE:
+-----
 <p align="center">
   <a href="">
     <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/DAPE.png" alt="Logo" width="80%">
@@ -32,11 +35,10 @@ The proposed SR-Stereo:
 
 
 # vis
-
 Domain-adaptive visualization on KITTI:
 ![image](https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/vis.png)
 
- Qualitative disparity estimation results of DAPE on ETH3D:
+Qualitative disparity estimation results of DAPE on ETH3D:
 ![image](https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/DAPE_vis1.png)
 
 Qualitative disparity estimation results of DAPE on KITTI test set:
