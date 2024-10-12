@@ -1,7 +1,7 @@
 # SR-Stereo & DAPE
 
 <p align="center">
-  <h1 align="center">SR-Stereo & DAPE: Stepwise Regression and Pre-trained Edges for Practical Stereo Matching</h1>
+  <h1 align="center">Stepwise Regression and Pre-trained Edges for Practical Stereo Matching</h1>
   <h3 align="center"><a href="https://arxiv.org/pdf/2406.06953.pdf">arXiv</a>
   <div align="center"></div>
 </p>
