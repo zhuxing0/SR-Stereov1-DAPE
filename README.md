@@ -8,8 +8,10 @@
 
 > [Weiqing Xiao](https://github.com/zhuxing0), Wei Zhao* <br> Behang University
 
-The stepwise regression architecture:
+The stepwise regression architecture: 
 -----
+The iteration-based methods regress disparity error by predicting residual disparity ∆dk, while SR-Stereo splits the disparity error into
+multiple segments and regresses them by predicting multiple disparity clips.
 <p align="center">
   <a href="">
     <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/idea.png" alt="Logo" width="70%">
