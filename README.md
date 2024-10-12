@@ -8,17 +8,24 @@
 
 > [Weiqing Xiao](https://github.com/zhuxing0), Wei Zhao* <br> Behang University
 
-The overall architecture of the proposed SR-Stereo:
+The stepwise regression architecture:
 <p align="center">
   <a href="">
-    <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/SR-Stereo.png" alt="Logo" width="90%">
+    <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/idea.png" alt="Logo" width="70%">
+  </a>
+</p>
+
+The proposed SR-Stereo:
+<p align="center">
+  <a href="">
+    <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/SR-Stereo.png" alt="Logo" width="80%">
   </a>
 </p>
 
  The overall framework of the proposed DAPE:
 <p align="center">
   <a href="">
-    <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/DAPE.png" alt="Logo" width="90%">
+    <img src="https://github.com/zhuxing0/SR-Stereov1-DAPE/blob/main/img_from_paper/DAPE.png" alt="Logo" width="80%">
   </a>
 </p>
 
