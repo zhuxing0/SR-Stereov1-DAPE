@@ -2,7 +2,7 @@
 
 <p align="center">
   <h1 align="center">Stepwise Regression and Pre-trained Edges for Practical Stereo Matching</h1>
-  <h3 align="center"><a href="https://arxiv.org/pdf/2406.06953.pdf">arXiv</a>
+  <h3 align="center"><a href="https://ieeexplore.ieee.org/abstract/document/11089999">T-ITS 2025</a>
   <div align="center"></div>
 </p>
 
